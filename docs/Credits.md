@@ -107,5 +107,6 @@ I made this extension for my Asus Viwobook. I referred to codes of other extensi
 > * luna-duclos
 > * pramodhrachuri
 > * MasinAD
+> * jnsson@crowdin
 
 

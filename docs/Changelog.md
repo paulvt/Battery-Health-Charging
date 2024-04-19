@@ -8,6 +8,19 @@ permalink: /changelogs
 # Changelogs
 
 {: .important-title }
+> GN-45_Version 61 &emsp;&emsp; Mar 03, 2024
+> * Add swedish translation, credits: jnsson@crowdin
+> * Updated translations: credits: viksok, Vibe-HU, yakushabb, Vistaus
+
+{: .important-title }
+> GN-45_Version 60 &emsp;&emsp; Mar 03, 2024
+> * Improved notification destroy
+
+{: .note-title }
+> GN-45_Version 59 &emsp;&emsp; Mar 03, 2024
+> * Improved notification destroy
+
+{: .important-title }
 > GN-45_Version 58 &emsp;&emsp; Feb 28, 2024
 > * Update Italian translation. Credits: albanobattistella
 
