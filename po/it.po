@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: unnamed project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-31 19:17-0700\n"
-"PO-Revision-Date: 2024-02-25 18:31+0100\n"
+"PO-Revision-Date: 2024-04-19 16:07-0700\n"
 "Last-Translator: Albano Battistella <albanobattistella@gmail.com>\n"
 "Language-Team: Italian <>\n"
 "Language: it\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.1\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: lib/notifier.js:19
 msgid "Battery Health Charging"
@@ -26,7 +26,7 @@ msgstr "Battery Health Charging"
 
 #: lib/notifier.js:29
 msgid "Mode updated"
-msgstr ""
+msgstr "Modalità di ricarica aggiornata"
 
 #: lib/notifier.js:34
 msgid "Battery Health Charging Error"

@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: battery-health-charging\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-31 19:17-0700\n"
-"PO-Revision-Date: 2023-12-15 11:47-0800\n"
+"PO-Revision-Date: 2024-04-19 16:01-0700\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: lib/notifier.js:19
 msgid "Battery Health Charging"
@@ -24,7 +24,7 @@ msgstr "Battery Health Charging"
 
 #: lib/notifier.js:29
 msgid "Mode updated"
-msgstr ""
+msgstr "充电模式更新"
 
 #: lib/notifier.js:34
 msgid "Battery Health Charging Error"
@@ -484,8 +484,8 @@ msgid ""
 "quick settings panel when device is plugged into power source, even when "
 "charging is disabled due to charge threshold."
 msgstr ""
-"在设备插入时将系统托盘和快速设置面板中的电池指示器图标切换为<b>正在充电</b>，"
-"即使由于充电阈值而禁用充电也是如此。"
+"在设备插入时将系统托盘和快速设置面板中的电池指示器图标切换为<b>正在充电</"
+"b>，即使由于充电阈值而禁用充电也是如此。"
 
 #: ui/general.ui:103
 msgid "Installation"
