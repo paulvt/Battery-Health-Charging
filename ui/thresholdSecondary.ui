@@ -3,7 +3,7 @@
   <template class="BHC_Threshold_Secondary" parent="AdwPreferencesPage">
     <property name="name">Threshold2</property>
     <property name="title" translatable="yes">Battery 2</property>
-    <property name="icon-name">battery-level-100-charged-symbolic</property>
+    <property name="icon-name">bhc-qs-sym-bal-symbolic</property>
     <child>
       <object class="AdwPreferencesGroup">
         <child>

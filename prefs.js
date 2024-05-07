@@ -4,6 +4,7 @@ import {ExtensionPreferences} from 'resource:///org/gnome/Shell/Extensions/js/ex
 
 import * as DeviceList from './lib/deviceList.js';
 import {General} from './preferences/general.js';
+import {Power} from './preferences/power.js';
 import {Apple} from './preferences/apple.js';
 import {Dell} from './preferences/dell.js';
 import {Thinkpad} from './preferences/thinkpad.js';
@@ -28,6 +29,7 @@ export default class BatteryHealthChargingPrefs extends ExtensionPreferences {
 
         window.set_default_size(650, 700);
         window.add(new General(settings, currentDevice, this.dir));
+        window.add(new Power(settings, currentDevice));
         if (currentDevice) {
             if (currentDevice.deviceHaveVariableThreshold) // Laptop has customizable threshold
                 window.add(new ThresholdPrimary(settings, currentDevice));

@@ -49,6 +49,10 @@
             <default>false</default>
             <summary>Toggle to correct power indicator icon</summary>
         </key>
+        <key name="scale-battery-level" type="b">
+            <default>false</default>
+            <summary>Toggle to correct power indicator icon</summary>
+        </key>
         <key name="polkit-status" type="s">
             <default>"not-installed"</default>
             <summary>Install service</summary>

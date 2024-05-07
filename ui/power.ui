@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="Battery-Health-Charging@maniacx.github.com">
+  <template class="BHC_Power" parent="AdwPreferencesPage">
+    <property name="name">General</property>
+    <property name="title" translatable="yes">Power</property>
+    <property name="icon-name">battery-level-100-charged-symbolic</property>
+    <child>
+      <object class="AdwPreferencesGroup" id="settings_group">
+        <property name="title" translatable="yes">Power Indicator Settings</property>
+        <child>
+          <object class="AdwActionRow">
+            <property name="title" translatable="yes">Change battery indicator icon behavior</property>
+            <property name="subtitle" translatable="yes">Switches battery indicator icon to &lt;b&gt;charging&lt;/b&gt; in the system tray and quick settings panel when device is plugged into power source, even when charging is disabled due to charge threshold.</property>
+            <property name="activatable-widget">amend_power_indicator</property>
+            <child>
+              <object class="GtkSwitch" id="amend_power_indicator">
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwActionRow">
+            <property name="title" translatable="yes">Change battery scale according to threshold value</property>
+            <property name="subtitle" translatable="yes">Battery indicator/text in system tray will report 100% if battery level equal charging threshold values.</property>
+            <property name="activatable-widget">scale_battery_level</property>
+            <child>
+              <object class="GtkSwitch" id="scale_battery_level">
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>
