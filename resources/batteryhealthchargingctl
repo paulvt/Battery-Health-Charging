@@ -32,6 +32,8 @@ BAT0_FORCE_DISCHARGE_PATH='/sys/class/power_supply/BAT0/charge_behaviour'
 BAT1_FORCE_DISCHARGE_PATH='/sys/class/power_supply/BAT1/charge_behaviour'
 DELL_SMBIOS_PATH='/usr/sbin/smbios-battery-ctl'
 DELL_CCTK_PATH='/opt/dell/dcc/cctk'
+CMB0_END_PATH='/sys/class/power_supply/CMB0/charge_control_end_threshold'
+CMB1_END_PATH='/sys/class/power_supply/CMB1/charge_control_end_threshold'
 
 EXTENSION_NAME="Battery Health Charging"
 ACTION_BASE="dem.batteryhealthcharging"
@@ -244,6 +246,14 @@ case "$TOOLCMD" in
         else
             cctk --ValSetupPwd="$ARG3" --PrimaryBattChargeCfg=Custom:"$ARG2"-"$ARG1"
         fi
+        exit ${EXIT_SUCCESS}
+        ;;
+    CMB0_END)
+        echo "$ARG1" > "$CMB0_END_PATH"
+        exit ${EXIT_SUCCESS}
+        ;;
+    CMB1_END)
+        echo "$ARG1" > "$CMB1_END_PATH"
         exit ${EXIT_SUCCESS}
         ;;
     CHECKINSTALLATION)
