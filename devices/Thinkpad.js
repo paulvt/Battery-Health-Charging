@@ -257,13 +257,14 @@ export const ThinkpadSingleBatteryBAT0 = GObject.registerClass({
         this._ctlPath = this._settings.get_string('ctl-path');
         this._endValue = this._settings.get_int(`current-${chargingMode}-end-threshold`);
         this._startValue = this._settings.get_int(`current-${chargingMode}-start-threshold`);
+        this._skipVerification = this._settings.get_boolean('skip-threshold-verification');
 
         if (!this._batteryMonitoringInitialized)
             this._initializeBatteryMonitoring();
         else if (this._settings.get_boolean('force-discharge-enabled'))
             this._forceDischarge();
 
-        if (this._verifyThreshold())
+        if (!this._skipVerification && this._verifyThreshold())
             return this._status;
 
         // Some device wont update end threshold if start threshold > end threshold
@@ -271,6 +272,9 @@ export const ThinkpadSingleBatteryBAT0 = GObject.registerClass({
             [this._status] = await runCommandCtl(this._ctlPath, 'BAT0_END_START', `${this._endValue}`, `${this._startValue}`, null);
         else
             [this._status] = await runCommandCtl(this._ctlPath, 'BAT0_START_END', `${this._endValue}`, `${this._startValue}`, null);
+
+        if (this._skipVerification)
+            return this._status;
 
         if (this._status === 0) {
             if (this._verifyThreshold())
@@ -451,13 +455,14 @@ export const ThinkpadSingleBatteryBAT1 = GObject.registerClass({
         this._ctlPath = this._settings.get_string('ctl-path');
         this._endValue = this._settings.get_int(`current-${chargingMode}-end-threshold`);
         this._startValue = this._settings.get_int(`current-${chargingMode}-start-threshold`);
+        this._skipVerification = this._settings.get_boolean('skip-threshold-verification');
 
         if (!this._batteryMonitoringInitialized)
             this._initializeBatteryMonitoring();
         if (this._settings.get_boolean('force-discharge-enabled'))
             this._forceDischarge();
 
-        if (this._verifyThreshold())
+        if (!this._skipVerification && this._verifyThreshold())
             return this._status;
 
         // Some device wont update end threshold if start threshold > end threshold
@@ -465,6 +470,9 @@ export const ThinkpadSingleBatteryBAT1 = GObject.registerClass({
             [this._status] = await runCommandCtl(this._ctlPath, 'BAT1_END_START', `${this._endValue}`, `${this._startValue}`, null);
         else
             [this._status] = await runCommandCtl(this._ctlPath, 'BAT1_START_END', `${this._endValue}`, `${this._startValue}`, null);
+
+        if (this._skipVerification)
+            return this._status;
 
         if (this._status === 0) {
             if (this._verifyThreshold())

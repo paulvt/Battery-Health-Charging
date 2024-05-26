@@ -85,6 +85,10 @@
             <default>false</default>
             <summary>Enable force discharge</summary>
         </key>
+        <key name="skip-threshold-verification" type="b">
+            <default>false</default>
+            <summary>Skip threshold verification</summary>
+        </key>
         <key name="default-threshold" type="b">
             <default>true</default>
             <summary>Toggle between default and customized threshold</summary>

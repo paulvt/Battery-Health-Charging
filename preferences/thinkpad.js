@@ -9,6 +9,7 @@ export const  Thinkpad = GObject.registerClass({
     Template: GLib.Uri.resolve_relative(import.meta.url, '../ui/thinkpad.ui', GLib.UriFlags.NONE),
     InternalChildren: [
         'force_discharge_feature',
+        'skip_threshold_verification',
     ],
 }, class Thinkpad extends Adw.PreferencesPage {
     constructor(settings) {
@@ -18,6 +19,12 @@ export const  Thinkpad = GObject.registerClass({
         this._settings.bind(
             'force-discharge-feature',
             this._force_discharge_feature,
+            'active',
+            Gio.SettingsBindFlags.DEFAULT
+        );
+        this._settings.bind(
+            'skip-threshold-verification',
+            this._skip_threshold_verification,
             'active',
             Gio.SettingsBindFlags.DEFAULT
         );
