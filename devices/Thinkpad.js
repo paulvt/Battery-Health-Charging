@@ -265,6 +265,7 @@ export const ThinkpadSingleBatteryBAT0 = GObject.registerClass({
 
         if (this._verifyThreshold())
             return this._status;
+
         // Some device wont update end threshold if start threshold > end threshold
         if (this._startValue >= this._oldEndValue)
             [this._status] = await runCommandCtl(this._ctlPath, 'BAT0_END_START', `${this._endValue}`, `${this._startValue}`, null);
@@ -275,6 +276,11 @@ export const ThinkpadSingleBatteryBAT0 = GObject.registerClass({
             if (this._verifyThreshold())
                 return this._status;
         }
+
+        if ((this._oldEndValue !== this._endValue) && (this._oldStartValue === this._startValue))
+            [this._status] = await runCommandCtl(this._ctlPath, 'BAT0_END', `${this._endValue}`, null, null);
+        else if ((this._oldEndValue === this._endValue) && (this._oldStartValue !== this._startValue))
+            [this._status] = await runCommandCtl(this._ctlPath, 'BAT0_START', `${this._startValue}`, null, null);
 
         if (this._delayReadTimeoutId)
             GLib.source_remove(this._delayReadTimeoutId);
@@ -453,6 +459,7 @@ export const ThinkpadSingleBatteryBAT1 = GObject.registerClass({
 
         if (this._verifyThreshold())
             return this._status;
+
         // Some device wont update end threshold if start threshold > end threshold
         if (this._startValue >= this._oldEndValue)
             [this._status] = await runCommandCtl(this._ctlPath, 'BAT1_END_START', `${this._endValue}`, `${this._startValue}`, null);
@@ -463,6 +470,11 @@ export const ThinkpadSingleBatteryBAT1 = GObject.registerClass({
             if (this._verifyThreshold())
                 return this._status;
         }
+
+        if ((this._oldEndValue !== this._endValue) && (this._oldStartValue === this._startValue))
+            [this._status] = await runCommandCtl(this._ctlPath, 'BAT1_END', `${this._endValue}`, null, null);
+        else if ((this._oldEndValue === this._endValue) && (this._oldStartValue !== this._startValue))
+            [this._status] = await runCommandCtl(this._ctlPath, 'BAT1_START', `${this._startValue}`, null, null);
 
         if (this._delayReadTimeoutId)
             GLib.source_remove(this._delayReadTimeoutId);
