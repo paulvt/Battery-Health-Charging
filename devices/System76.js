@@ -51,7 +51,7 @@ export const System76SingleBattery = GObject.registerClass({
     isAvailable() {
         if (!fileExists(VENDOR_SYSTEM76))
             return false;
-        if(!readFile(DMI_PATH).includes('System76'))
+        if (!readFile(DMI_PATH).includes('System76'))
             return false;
         if (!fileExists(BAT0_START_PATH))
             return false;
