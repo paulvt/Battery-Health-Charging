@@ -273,8 +273,12 @@ export const ThinkpadSingleBatteryBAT0 = GObject.registerClass({
         else
             [this._status] = await runCommandCtl(this._ctlPath, 'BAT0_START_END', `${this._endValue}`, `${this._startValue}`, null);
 
-        if (this._skipVerification)
+        if (this._skipVerification) {
+            this.endLimitValue = this._endValue;
+            this.startLimitValue = this._startValue;
+            this.emit('threshold-applied', 'success');
             return this._status;
+        }
 
         if (this._status === 0) {
             if (this._verifyThreshold())
@@ -471,8 +475,12 @@ export const ThinkpadSingleBatteryBAT1 = GObject.registerClass({
         else
             [this._status] = await runCommandCtl(this._ctlPath, 'BAT1_START_END', `${this._endValue}`, `${this._startValue}`, null);
 
-        if (this._skipVerification)
+        if (this._skipVerification) {
+            this.endLimitValue = this._endValue;
+            this.startLimitValue = this._startValue;
+            this.emit('threshold-applied', 'success');
             return this._status;
+        }
 
         if (this._status === 0) {
             if (this._verifyThreshold())
