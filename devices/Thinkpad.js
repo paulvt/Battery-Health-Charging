@@ -258,7 +258,10 @@ export const ThinkpadSingleBatteryBAT0 = GObject.registerClass({
         this._endValue = this._settings.get_int(`current-${chargingMode}-end-threshold`);
         this._startValue = this._settings.get_int(`current-${chargingMode}-start-threshold`);
         this._skipVerification = this._settings.get_boolean('skip-threshold-verification');
-
+        log('---- Battery Health Charging : ----- Start set threshold');
+        log('---- Battery Health Charging : Pre-write this._endValue = ' + this._endValue);
+        log('---- Battery Health Charging : Pre-write this._startValue = ' + this._startValue);
+        
         if (!this._batteryMonitoringInitialized)
             this._initializeBatteryMonitoring();
         else if (this._settings.get_boolean('force-discharge-enabled'))
@@ -266,6 +269,8 @@ export const ThinkpadSingleBatteryBAT0 = GObject.registerClass({
 
         if (!this._skipVerification && this._verifyThreshold())
             return this._status;
+        log('---- Battery Health Charging : Pre-write this._oldEndValue = ' + this._oldEndValue);
+        log('---- Battery Health Charging : Pre-write this._oldStartValue = ' + this._oldStartValue);
 
         // Some device wont update end threshold if start threshold > end threshold
         if (this._startValue >= this._oldEndValue)
@@ -279,17 +284,25 @@ export const ThinkpadSingleBatteryBAT0 = GObject.registerClass({
             this.emit('threshold-applied', 'success');
             return this._status;
         }
+        log('---- Battery Health Charging : Post-write this._status = ' + this._status);
 
         if (this._status === 0) {
             if (this._verifyThreshold())
                 return this._status;
         }
+        log('---- Battery Health Charging : Post-write this._endValue = ' + this._endValue);
+        log('---- Battery Health Charging : Post-write this._startValue = ' + this._startValue);
+        log('---- Battery Health Charging : Post-write this._oldEndValue = ' + this._oldEndValue);
+        log('---- Battery Health Charging : Post-write this._oldStartValue = ' + this._oldStartValue);
 
-        if ((this._oldEndValue !== this._endValue) && (this._oldStartValue === this._startValue))
+        if ((this._oldEndValue !== this._endValue) && (this._oldStartValue === this._startValue)) {
             [this._status] = await runCommandCtl(this._ctlPath, 'BAT0_END', `${this._endValue}`, null, null);
-        else if ((this._oldEndValue === this._endValue) && (this._oldStartValue !== this._startValue))
+            log('---- Battery Health Charging : Updated END threshold with this._status = ' + this._status);
+        } else if ((this._oldEndValue === this._endValue) && (this._oldStartValue !== this._startValue)) {
             [this._status] = await runCommandCtl(this._ctlPath, 'BAT0_START', `${this._startValue}`, null, null);
-
+            log('---- Battery Health Charging : Updated START threshold with this._status = ' + this._status);
+        }
+            
         if (this._delayReadTimeoutId)
             GLib.source_remove(this._delayReadTimeoutId);
         this._delayReadTimeoutId = null;
@@ -315,9 +328,15 @@ export const ThinkpadSingleBatteryBAT0 = GObject.registerClass({
     }
 
     _reVerifyThreshold() {
+        log('---- Battery Health Charging : _reVerifyThreshold with this._status = ' + this._status);
         if (this._status === 0) {
-            if (this._verifyThreshold())
+            if (this._verifyThreshold()) {
+        log('---- Battery Health Charging : _reVerifyThreshold this._endValue = ' + this._endValue);
+        log('---- Battery Health Charging : _reVerifyThreshold this._startValue = ' + this._startValue);
+        log('---- Battery Health Charging : _reVerifyThreshold this._oldEndValue = ' + this._oldEndValue);
+        log('---- Battery Health Charging : _reVerifyThreshold this._oldStartValue = ' + this._oldStartValue);
                 return;
+            }
         }
         this.emit('threshold-applied', 'failed');
     }
