@@ -60,9 +60,9 @@ export const DellSmBiosSingleBattery = GObject.registerClass({
             smbiosUsesAbsolutePath = this._usesLibSmbios;
         }
         this._usesCctk = fileExists(CCTK_PATH);
-        if(!this._usesCctk) {
+        if (!this._usesCctk) {
             this._usesCctk = GLib.find_program_in_path('cctk') ? true : false;
-            cctkUsesRelativePath = this._usesCctk
+            cctkUsesRelativePath = this._usesCctk;
         }
         if (!this._usesCctk && !this._usesLibSmbios)
             return false;
