@@ -19,6 +19,18 @@
             </child>
           </object>
         </child>
+        <child>
+          <object class="AdwActionRow">
+            <property name="title" translatable="yes">Skip Threshold Verification</property>
+            <property name="subtitle" translatable="yes">Certain ThinkPad models may read threshold values incorrectly, causing verification failures. Enabling this option will write new threshold values without verifying if they were applied correctly.</property>
+            <property name="activatable-widget">skip_threshold_verification</property>
+            <child>
+              <object class="GtkSwitch" id="skip_threshold_verification">
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
       </object>
     </child>
   </template>

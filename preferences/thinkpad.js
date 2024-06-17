@@ -8,6 +8,7 @@ var Thinkpad = GObject.registerClass({
     Template: `file://${GLib.build_filenamev([Me.path, 'ui', 'thinkpad.ui'])}`,
     InternalChildren: [
         'force_discharge_feature',
+        'skip_threshold_verification',
     ],
 }, class Thinkpad extends Adw.PreferencesPage {
     constructor(settings) {
@@ -17,6 +18,12 @@ var Thinkpad = GObject.registerClass({
         this._settings.bind(
             'force-discharge-feature',
             this._force_discharge_feature,
+            'active',
+            Gio.SettingsBindFlags.DEFAULT
+        );
+        this._settings.bind(
+            'skip-threshold-verification',
+            this._skip_threshold_verification,
             'active',
             Gio.SettingsBindFlags.DEFAULT
         );

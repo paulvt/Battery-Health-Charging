@@ -57,7 +57,7 @@ var About = GObject.registerClass({
         this._assignURL(this._row_readme, 'https://maniacx.github.io/Battery-Health-Charging/');
         this._assignURL(this._row_bug_report, 'https://github.com/maniacx/Battery-Health-Charging/issues');
         this._assignURL(this._row_sources, 'https://github.com/maniacx/Battery-Health-Charging/');
-        this._assignURL(this._row_crowdin, 'https://crowdin.com/project/battery-health-charging');
+        this._assignURL(this._row_crowdin, 'https://crowdin.com/project/battery-health-charging-45');
         this._assignURL(this._row_translation_guide, 'https://maniacx.github.io/Battery-Health-Charging/translation');
     }
 
