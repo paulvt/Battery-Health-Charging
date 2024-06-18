@@ -1,5 +1,5 @@
 'use strict';
-/* Fujitsu Laptops */
+/* Fujitsu Laptops supported on 6.9 kernel*/
 import GLib from 'gi://GLib';
 import GObject from 'gi://GObject';
 import * as Helper from '../lib/helper.js';
