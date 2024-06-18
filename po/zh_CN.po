@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: battery-health-charging\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-31 19:17-0700\n"
+"POT-Creation-Date: 2024-06-18 10:53-0700\n"
 "PO-Revision-Date: 2024-04-19 16:01-0700\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -484,8 +484,8 @@ msgid ""
 "quick settings panel when device is plugged into power source, even when "
 "charging is disabled due to charge threshold."
 msgstr ""
-"在设备插入时将系统托盘和快速设置面板中的电池指示器图标切换为<b>正在充电</"
-"b>，即使由于充电阈值而禁用充电也是如此。"
+"在设备插入时将系统托盘和快速设置面板中的电池指示器图标切换为<b>正在充电</b>，"
+"即使由于充电阈值而禁用充电也是如此。"
 
 #: ui/general.ui:103
 msgid "Installation"
@@ -540,6 +540,17 @@ msgid ""
 "Enable option to force discharge battery when battery level higher than "
 "current threshold"
 msgstr "当电池电量高于当前阈值时，启用强制放电电池选项"
+
+#: ui/thinkpad.ui:24
+msgid "Skip Threshold Verification"
+msgstr ""
+
+#: ui/thinkpad.ui:25
+msgid ""
+"Certain ThinkPad models may read threshold values incorrectly, causing "
+"verification failures. Enabling this option will write new threshold values "
+"without verifying if they were applied correctly."
+msgstr ""
 
 #: ui/thresholdPrimary.ui:21 ui/thresholdSecondary.ui:21
 msgid "Customize"

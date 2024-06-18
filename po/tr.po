@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Battery-Health-Charging@maniacx.github.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-31 19:17-0700\n"
+"POT-Creation-Date: 2024-06-18 10:53-0700\n"
 "PO-Revision-Date: 2024-04-01 22:51+0300\n"
 "Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Turkish <takim@gnome.org.tr>\n"
@@ -280,11 +280,11 @@ msgstr "© %s %s"
 #: preferences/about.js:48
 #, javascript-format
 msgid ""
-"This application comes with absolutely no warranty. See the <a href=\"%s\">"
-"%s</a> for details."
+"This application comes with absolutely no warranty. See the <a "
+"href=\"%s\">%s</a> for details."
 msgstr ""
-"Bu program kesinlikle hiçbir garanti vermiyor. Ayrıntılar için <a href=\"%s"
-"\">%s</a> bağlantısına bakın."
+"Bu program kesinlikle hiçbir garanti vermiyor. Ayrıntılar için <a "
+"href=\"%s\">%s</a> bağlantısına bakın."
 
 #: preferences/general.js:53
 msgid ""
@@ -552,6 +552,17 @@ msgid ""
 msgstr ""
 "Pil seviyesi geçerli eşikten yüksek olduğunda pili boşalmaya zorlama "
 "seçeneğini etkinleştir"
+
+#: ui/thinkpad.ui:24
+msgid "Skip Threshold Verification"
+msgstr ""
+
+#: ui/thinkpad.ui:25
+msgid ""
+"Certain ThinkPad models may read threshold values incorrectly, causing "
+"verification failures. Enabling this option will write new threshold values "
+"without verifying if they were applied correctly."
+msgstr ""
 
 #: ui/thresholdPrimary.ui:21 ui/thresholdSecondary.ui:21
 msgid "Customize"

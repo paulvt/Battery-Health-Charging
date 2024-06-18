@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: battery-health-charging-45\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-31 19:17-0700\n"
+"POT-Creation-Date: 2024-06-18 10:53-0700\n"
 "PO-Revision-Date: 2024-06-18 17:49\n"
 "Last-Translator: \n"
 "Language-Team: Hebrew\n"
@@ -10,7 +10,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
 "X-Crowdin-Project: battery-health-charging-45\n"
 "X-Crowdin-Project-ID: 613375\n"
 "X-Crowdin-Language: he\n"
@@ -38,7 +39,8 @@ msgid "Show details"
 msgstr "הצגת פרטים"
 
 #: lib/notifier.js:76
-msgid "Unsupported device.\n"
+msgid ""
+"Unsupported device.\n"
 "This extension is not compatible with your device."
 msgstr ""
 
@@ -70,7 +72,8 @@ msgstr ""
 
 #: lib/notifier.js:102
 #, javascript-format
-msgid "Battery 1\n"
+msgid ""
+"Battery 1\n"
 "Charge thresholds are set to %d / %d %%"
 msgstr ""
 
@@ -82,7 +85,8 @@ msgstr ""
 
 #: lib/notifier.js:112
 #, javascript-format
-msgid "Battery 1\n"
+msgid ""
+"Battery 1\n"
 "Charging Limit is set to %d%%"
 msgstr ""
 
@@ -94,13 +98,15 @@ msgstr ""
 
 #: lib/notifier.js:120
 #, javascript-format
-msgid "Battery 2\n"
+msgid ""
+"Battery 2\n"
 "Charge thresholds are set to %d / %d %%"
 msgstr ""
 
 #: lib/notifier.js:125
 #, javascript-format
-msgid "Battery 2\n"
+msgid ""
+"Battery 2\n"
 "Charging Limit is set to %d%%"
 msgstr ""
 
@@ -262,12 +268,17 @@ msgstr "© %s %s"
 
 #: preferences/about.js:48
 #, javascript-format
-msgid "This application comes with absolutely no warranty. See the <a href=\"%s\">%s</a> for details."
-msgstr "תכנית זו מופצת ללא שום אחריות. ניתן לבקר בכתובת <a href=\"%s\">%s</a> לפרטים."
+msgid ""
+"This application comes with absolutely no warranty. See the <a "
+"href=\"%s\">%s</a> for details."
+msgstr ""
+"תכנית זו מופצת ללא שום אחריות. ניתן לבקר בכתובת <a href=\"%s\">%s</a> לפרטים."
 
 #: preferences/general.js:53
-msgid "Select the type of icon for indicator and menu.\n"
-"In threshold settings, if <b>Customise</b> mode is selected, icon type will switch to <b>Symbols Only</b> and this option will be disabled."
+msgid ""
+"Select the type of icon for indicator and menu.\n"
+"In threshold settings, if <b>Customise</b> mode is selected, icon type will "
+"switch to <b>Symbols Only</b> and this option will be disabled."
 msgstr ""
 
 #: preferences/general.js:55
@@ -380,7 +391,9 @@ msgid "Requires Bios password validation to change mode/threshold"
 msgstr ""
 
 #: ui/dell.ui:31
-msgid "Enable if Dell command configure uses Bios (system) password to change mode/threshold"
+msgid ""
+"Enable if Dell command configure uses Bios (system) password to change mode/"
+"threshold"
 msgstr ""
 
 #: ui/dell.ui:43
@@ -428,7 +441,9 @@ msgid "Display subtitle with current mode on quick menu button"
 msgstr ""
 
 #: ui/general.ui:49
-msgid "Displays the current mode in the text form (subtitle) on the quick menu button."
+msgid ""
+"Displays the current mode in the text form (subtitle) on the quick menu "
+"button."
 msgstr ""
 
 #: ui/general.ui:60
@@ -452,7 +467,10 @@ msgid "Change battery indicator icon behavior"
 msgstr ""
 
 #: ui/general.ui:90
-msgid "Switches battery indicator icon to <b>charging</b> in the system tray and quick settings panel when device is plugged into power source, even when charging is disabled due to charge threshold."
+msgid ""
+"Switches battery indicator icon to <b>charging</b> in the system tray and "
+"quick settings panel when device is plugged into power source, even when "
+"charging is disabled due to charge threshold."
 msgstr ""
 
 #: ui/general.ui:103
@@ -468,9 +486,15 @@ msgid "Install / Update / Remove"
 msgstr ""
 
 #: ui/general.ui:110
-msgid "This device requires root privileges to change the charging limit. Setup a privileged script and give user access via polkit.\n\n"
-"<b>Root privileges are required</b> to install, update or remove the polkit policy script.\n\n"
-"<b>Install / Update </b> this polkit policy script and continue using this extension.\n"
+msgid ""
+"This device requires root privileges to change the charging limit. Setup a "
+"privileged script and give user access via polkit.\n"
+"\n"
+"<b>Root privileges are required</b> to install, update or remove the polkit "
+"policy script.\n"
+"\n"
+"<b>Install / Update </b> this polkit policy script and continue using this "
+"extension.\n"
 "<b>Remove</b> this polkit policy script before uninstalling this extension."
 msgstr ""
 
@@ -491,7 +515,20 @@ msgid "Enable force discharge battery feature (Experimental)"
 msgstr ""
 
 #: ui/thinkpad.ui:13
-msgid "Enable option to force discharge battery when battery level higher than current threshold"
+msgid ""
+"Enable option to force discharge battery when battery level higher than "
+"current threshold"
+msgstr ""
+
+#: ui/thinkpad.ui:24
+msgid "Skip Threshold Verification"
+msgstr ""
+
+#: ui/thinkpad.ui:25
+msgid ""
+"Certain ThinkPad models may read threshold values incorrectly, causing "
+"verification failures. Enabling this option will write new threshold values "
+"without verifying if they were applied correctly."
 msgstr ""
 
 #: ui/thresholdPrimary.ui:21 ui/thresholdSecondary.ui:21
@@ -526,4 +563,3 @@ msgstr ""
 #: ui/thresholdSecondary.ui:154 ui/thresholdSecondary.ui:223
 msgid "Start charging threshold value"
 msgstr ""
-

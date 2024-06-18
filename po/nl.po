@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-31 19:17-0700\n"
+"POT-Creation-Date: 2024-06-18 10:53-0700\n"
 "PO-Revision-Date: 2024-04-01 20:03+0200\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: \n"
@@ -555,6 +555,17 @@ msgid ""
 msgstr ""
 "Schakel de optie in om de accu te ontladen als het accuniveau lager is dan "
 "de huidige drempelwaarde"
+
+#: ui/thinkpad.ui:24
+msgid "Skip Threshold Verification"
+msgstr ""
+
+#: ui/thinkpad.ui:25
+msgid ""
+"Certain ThinkPad models may read threshold values incorrectly, causing "
+"verification failures. Enabling this option will write new threshold values "
+"without verifying if they were applied correctly."
+msgstr ""
 
 #: ui/thresholdPrimary.ui:21 ui/thresholdSecondary.ui:21
 msgid "Customize"

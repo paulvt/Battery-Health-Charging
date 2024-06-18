@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: battery-health-charging-45\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-31 19:17-0700\n"
+"POT-Creation-Date: 2024-06-18 10:53-0700\n"
 "PO-Revision-Date: 2024-04-19 22:54\n"
 "Last-Translator: \n"
 "Language-Team: Swedish\n"
@@ -38,9 +38,11 @@ msgid "Show details"
 msgstr "Visa detaljer"
 
 #: lib/notifier.js:76
-msgid "Unsupported device.\n"
+msgid ""
+"Unsupported device.\n"
 "This extension is not compatible with your device."
-msgstr "Denna enhet stöds inte.\n"
+msgstr ""
+"Denna enhet stöds inte.\n"
 "Detta tillägg är inte kompatibelt med den här datorn."
 
 #: lib/notifier.js:78
@@ -71,9 +73,11 @@ msgstr "Ange rätt BIOS-lösenord för att ställa in laddningsgränsen."
 
 #: lib/notifier.js:102
 #, javascript-format
-msgid "Battery 1\n"
+msgid ""
+"Battery 1\n"
 "Charge thresholds are set to %d / %d %%"
-msgstr "Batteri 1\n"
+msgstr ""
+"Batteri 1\n"
 "Laddningsgränserna är inställda på %d / %d %%"
 
 #. TRANSLATORS: Keep translation short if possible. Maximum  34 characters can be displayed here
@@ -84,9 +88,11 @@ msgstr "Laddningsgränserna är inställda på %d / %d %%"
 
 #: lib/notifier.js:112
 #, javascript-format
-msgid "Battery 1\n"
+msgid ""
+"Battery 1\n"
 "Charging Limit is set to %d%%"
-msgstr "Batteri 1\n"
+msgstr ""
+"Batteri 1\n"
 "Laddningsgränsen är satt till %d%%"
 
 #. TRANSLATORS: Keep translation short if possible. Maximum  34 characters can be displayed here
@@ -97,16 +103,20 @@ msgstr "Laddningsgränsen är satt till %d%%"
 
 #: lib/notifier.js:120
 #, javascript-format
-msgid "Battery 2\n"
+msgid ""
+"Battery 2\n"
 "Charge thresholds are set to %d / %d %%"
-msgstr "Batteri 2\n"
+msgstr ""
+"Batteri 2\n"
 "Laddningsgränserna är inställda på %d / %d %%"
 
 #: lib/notifier.js:125
 #, javascript-format
-msgid "Battery 2\n"
+msgid ""
+"Battery 2\n"
 "Charging Limit is set to %d%%"
-msgstr "Batteri 2\n"
+msgstr ""
+"Batteri 2\n"
 "Laddningsgränsen är satt till %d%%"
 
 #: lib/notifier.js:130
@@ -267,12 +277,18 @@ msgstr "©️ %s %s"
 
 #: preferences/about.js:48
 #, javascript-format
-msgid "This application comes with absolutely no warranty. See the <a href=\"%s\">%s</a> for details."
-msgstr "Detta program levereras utan någon form av garanti. Se <a href=\"%s\">%s</a> för detaljer."
+msgid ""
+"This application comes with absolutely no warranty. See the <a "
+"href=\"%s\">%s</a> for details."
+msgstr ""
+"Detta program levereras utan någon form av garanti. Se <a href=\"%s\">%s</a> "
+"för detaljer."
 
 #: preferences/general.js:53
-msgid "Select the type of icon for indicator and menu.\n"
-"In threshold settings, if <b>Customise</b> mode is selected, icon type will switch to <b>Symbols Only</b> and this option will be disabled."
+msgid ""
+"Select the type of icon for indicator and menu.\n"
+"In threshold settings, if <b>Customise</b> mode is selected, icon type will "
+"switch to <b>Symbols Only</b> and this option will be disabled."
 msgstr ""
 
 #: preferences/general.js:55
@@ -385,7 +401,9 @@ msgid "Requires Bios password validation to change mode/threshold"
 msgstr "BIOS-lösenord krävs för att ändra laddningsläge/gräns"
 
 #: ui/dell.ui:31
-msgid "Enable if Dell command configure uses Bios (system) password to change mode/threshold"
+msgid ""
+"Enable if Dell command configure uses Bios (system) password to change mode/"
+"threshold"
 msgstr ""
 
 #: ui/dell.ui:43
@@ -433,7 +451,9 @@ msgid "Display subtitle with current mode on quick menu button"
 msgstr ""
 
 #: ui/general.ui:49
-msgid "Displays the current mode in the text form (subtitle) on the quick menu button."
+msgid ""
+"Displays the current mode in the text form (subtitle) on the quick menu "
+"button."
 msgstr ""
 
 #: ui/general.ui:60
@@ -457,8 +477,14 @@ msgid "Change battery indicator icon behavior"
 msgstr "Ändra batteriindikatorns beteende"
 
 #: ui/general.ui:90
-msgid "Switches battery indicator icon to <b>charging</b> in the system tray and quick settings panel when device is plugged into power source, even when charging is disabled due to charge threshold."
-msgstr "Växlar batteriindikator-ikonen till <b>laddning</b> i systemfältet och snabbinställningspanelen när enheten är ansluten till strömkälla, även när laddning är inaktiverad på grund av laddningsgränsen."
+msgid ""
+"Switches battery indicator icon to <b>charging</b> in the system tray and "
+"quick settings panel when device is plugged into power source, even when "
+"charging is disabled due to charge threshold."
+msgstr ""
+"Växlar batteriindikator-ikonen till <b>laddning</b> i systemfältet och "
+"snabbinställningspanelen när enheten är ansluten till strömkälla, även när "
+"laddning är inaktiverad på grund av laddningsgränsen."
 
 #: ui/general.ui:103
 msgid "Installation"
@@ -473,14 +499,27 @@ msgid "Install / Update / Remove"
 msgstr "Installera / Uppdatera / Ta bort"
 
 #: ui/general.ui:110
-msgid "This device requires root privileges to change the charging limit. Setup a privileged script and give user access via polkit.\n\n"
-"<b>Root privileges are required</b> to install, update or remove the polkit policy script.\n\n"
-"<b>Install / Update </b> this polkit policy script and continue using this extension.\n"
+msgid ""
+"This device requires root privileges to change the charging limit. Setup a "
+"privileged script and give user access via polkit.\n"
+"\n"
+"<b>Root privileges are required</b> to install, update or remove the polkit "
+"policy script.\n"
+"\n"
+"<b>Install / Update </b> this polkit policy script and continue using this "
+"extension.\n"
 "<b>Remove</b> this polkit policy script before uninstalling this extension."
-msgstr "Denna enhet kräver root-rättigheter för att ändra laddningsgränsen. Ställ in ett privilegierat skript och ge användaren åtkomst via polkit.\n\n"
-"<b>Root-rättigheter krävs</b> för att installera, uppdatera eller ta bort polkit-policyskriptet.\n\n"
-"<b>Installera / uppdatera </b> detta polkit-policyskript och fortsätt använda detta tillägg.\n"
-"<b>Ta bort</b> detta polkit-policyskript innan du avinstallerar detta tillägg."
+msgstr ""
+"Denna enhet kräver root-rättigheter för att ändra laddningsgränsen. Ställ in "
+"ett privilegierat skript och ge användaren åtkomst via polkit.\n"
+"\n"
+"<b>Root-rättigheter krävs</b> för att installera, uppdatera eller ta bort "
+"polkit-policyskriptet.\n"
+"\n"
+"<b>Installera / uppdatera </b> detta polkit-policyskript och fortsätt "
+"använda detta tillägg.\n"
+"<b>Ta bort</b> detta polkit-policyskript innan du avinstallerar detta "
+"tillägg."
 
 #: ui/general.ui:134
 msgid "Symbols Only"
@@ -499,8 +538,23 @@ msgid "Enable force discharge battery feature (Experimental)"
 msgstr "Aktivera tvingade urladdning av batteriet (Experimentell)"
 
 #: ui/thinkpad.ui:13
-msgid "Enable option to force discharge battery when battery level higher than current threshold"
-msgstr "Aktivera alternativet tvingade urladdning när batterinivån är högre än nuvarande gränsnivå"
+msgid ""
+"Enable option to force discharge battery when battery level higher than "
+"current threshold"
+msgstr ""
+"Aktivera alternativet tvingade urladdning när batterinivån är högre än "
+"nuvarande gränsnivå"
+
+#: ui/thinkpad.ui:24
+msgid "Skip Threshold Verification"
+msgstr ""
+
+#: ui/thinkpad.ui:25
+msgid ""
+"Certain ThinkPad models may read threshold values incorrectly, causing "
+"verification failures. Enabling this option will write new threshold values "
+"without verifying if they were applied correctly."
+msgstr ""
 
 #: ui/thresholdPrimary.ui:21 ui/thresholdSecondary.ui:21
 msgid "Customize"
@@ -534,4 +588,3 @@ msgstr "Nuvarande gräns"
 #: ui/thresholdSecondary.ui:154 ui/thresholdSecondary.ui:223
 msgid "Start charging threshold value"
 msgstr "Börja ladda vid denna nivå"
-
