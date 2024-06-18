@@ -8,6 +8,23 @@ permalink: /changelogs
 # Changelogs
 
 {: .important-title }
+> GN-45_Version 63 &emsp;&emsp; Jun 18, 2024
+> * Add Hebrew translations credit: omeritzics@crowdin
+> * Fujitsu: Support Fujitsu laptops.
+> * Hungarian translation contribution credit:  ViBE-HU
+> * system76: Add additional checks for system76
+> * thinkpad: Skip Verification option, workaround for quirky firmware.
+
+
+{: .note-title }
+> GN-44_Version 62 &emsp;&emsp; Jun 18, 2024
+> * Add Hebrew translations credit: omeritzics@crowdin
+> * Fujitsu: Support Fujitsu laptops.
+> * Hungarian translation contribution credit:  ViBE-HU
+> * system76: Add additional checks for system76
+> * thinkpad: Skip Verification option, workaround for quirky firmware.
+
+{: .important-title }
 > GN-45_Version 61 &emsp;&emsp; Mar 03, 2024
 > * Add swedish translation, credits: jnsson@crowdin
 > * Updated translations: credits: viksok, Vibe-HU, yakushabb, Vistaus
@@ -17,7 +34,7 @@ permalink: /changelogs
 > * Improved notification destroy
 
 {: .note-title }
-> GN-45_Version 59 &emsp;&emsp; Mar 03, 2024
+> GN-44_Version 59 &emsp;&emsp; Mar 03, 2024
 > * Improved notification destroy
 
 {: .important-title }
