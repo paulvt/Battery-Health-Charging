@@ -108,5 +108,6 @@ I made this extension for my Asus Viwobook. I referred to codes of other extensi
 > * pramodhrachuri
 > * MasinAD
 > * jnsson@crowdin
+> * omeritzics
 
 
