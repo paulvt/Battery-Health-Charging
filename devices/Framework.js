@@ -54,7 +54,7 @@ export const FrameworkSingleBatteryBAT1 = GObject.registerClass({
         this._settings.set_boolean('detected-framework-tool', this._hasFrameworkTool);
 
         if (this._hasFrameworkTool)
-            this._frameworkToolDriver = fileExists(CROS_EC_PATH) ? 'cros_ec' : 'portio';
+            this._frameworkToolDriver = fileExists(CROS_EC_PATH) ? 'cros-ec' : 'portio';
 
         return true;
     }
